@@ -1,0 +1,273 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap'); */
+
+:root{
+  --orange:#503900;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --green:#3A9943;
+  --brown:#503900;
+  --nude:#F2D2BD;
+  --puce:#A95C68;
+  --black: #28282B;
+  --light:#db929d;
+  --grey:#C0C0C0;
+  --lightgrey: #C0C0C0;
+}
+
+
+:root {
+    --main-bg-color: #fff;
+    --second-bg-color: #f5f5f5;
+    --third-bg-color: #e3e3e3;
+    --grey: #4b4b4b;
+    --black: #000;
+    --red: #c0392b;
+    --top-header-size: 30px;
+    --mid-header-size: 80px;
+    --bottom-header-size: 45px;
+    --btn-bg: #000;
+    --btn-border-color: #000;
+    --btn-color: #fff;
+    --border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
+    --border:.2rem solid var(--brown);
+    --border-hover:.2rem dashed var(--brown);
+
+
+
+    --primary-color:#ff5e14;
+    --bg-color:#151414;
+    --light-black:#373636;
+    --light-black-2:#2e2e2e;
+    --light-black-3:#202020;
+    --white-color:#fff;
+    --dark-gray:#757575;
+    --dark-gray-2:#7e7e7e;
+    --dark-gray-3:#878787;
+    --facebook:#3b5998;
+    --twitter:#55acee;
+    --instagram:#e93b81;
+}
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  /* color:#fff; */
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--main-bg-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--brown);
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Raleway";
+  background-color: grey;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 4.5rem;
+  background:var(--lightgrey);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+
+
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .box-container .box{
+  padding:3rem 2rem;
+  text-align: center;
+  background: var(--lightgrey);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.services .box-container .box:hover{
+  background:rgb(224, 221, 221);
+}
+
+.services .box-container .box img{
+  height: 7rem;
+}
+
+.services .box-container .box h3{
+  color:var(--brown);
+  font-size: 1.7rem;
+  padding-top: 1rem;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.3rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 8px;
+}
+
+.btn:hover{
+  background:lightgray;
+  font-weight: 700;
+  color:var(--btn-bg);
+}
+
+
+
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.contact .row .image{
+  flex:1 1 35rem;
+}
+
+.contact .row .image img{
+  width:100%;
+}
+
+.contact .row form{
+  flex:1 1 50rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+  width:49%;
+  margin:1rem 0;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  background:lightgray;
+  text-transform: none;
+  border-radius: 8px;
+}
+
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+  width:100%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.map{
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
+@media (max-width:991px){
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading span{
+    font-size: 2.5rem;
+  }
+
+  .contact .row form .inputBox input{
+    width:100%;
+  }
+
+}
